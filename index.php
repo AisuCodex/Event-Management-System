@@ -73,7 +73,7 @@
                             <td>{$row['id']}</td>
                             <td>{$row['name']}</td>
                             <td>{$row['date']}</td>
-                            <td>{$row['time']}</td>
+                            <td>" . date('h:i A', strtotime($row['time'])) . "</td>
                             <td>{$row['venue']}</td>
                             <td>
                                 <a href='event_details.php?id={$row['id']}'>View</a> | 
